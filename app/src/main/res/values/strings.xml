@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ConnexiononeTest</string>
+
+    <string name="main_phone">PHONE</string>
+    <string name="main_chat">CHAT</string>
+    <string name="main_unknown">UNKNOWN</string>
+    <string name="main_explore">EXPLORE</string>
+    <string name="main_wallet">WALLET</string>
+</resources>

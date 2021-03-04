@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--Fragment start-->
+    <FrameLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/rgTabBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Fragment end-->
+
+    <!--Shadow start-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:contentDescription="@null"
+        android:src="@drawable/bg_tab_bar_shadow"
+        app:layout_constraintBottom_toTopOf="@+id/rgTabBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--Shadow end-->
+
+    <!--Tab bar start-->
+    <RadioGroup
+        android:id="@+id/rgTabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccffffff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <!--Home start-->
+        <RadioButton
+            android:id="@+id/rbPhone"
+            style="@style/TabButtonStyle"
+            android:drawableTop="@drawable/ic_search_selector"
+            android:text="@string/main_phone" />
+        <!--Home end-->
+
+        <!--Schedule start-->
+        <RadioButton
+            android:id="@+id/rbChat"
+            style="@style/TabButtonStyle"
+            android:drawableTop="@drawable/ic_search_selector"
+            android:text="@string/main_chat" />
+        <!--Schedule end-->
+
+        <!--Follow start-->
+        <RadioButton
+            android:id="@+id/rbUnknown"
+            style="@style/TabButtonStyle"
+            android:drawableTop="@drawable/ic_search_selector"
+            android:text="@string/main_unknown" />
+        <!--Follow end-->
+
+        <!--Recharge start-->
+        <RadioButton
+            android:id="@+id/rbExplore"
+            style="@style/TabButtonStyle"
+            android:drawableTop="@drawable/ic_search_selector"
+            android:text="@string/main_explore" />
+        <!--Recharge end-->
+
+        <!--Mine start-->
+        <RadioButton
+            android:id="@+id/rbWallet"
+            style="@style/TabButtonStyle"
+            android:drawableTop="@drawable/ic_search_selector"
+            android:text="@string/main_wallet" />
+        <!--Mine end-->
+    </RadioGroup>
+    <!--Tab bar end-->
+</androidx.constraintlayout.widget.ConstraintLayout>

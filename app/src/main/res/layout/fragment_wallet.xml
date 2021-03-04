@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="false"
+    android:background="#f6f9ff">
+    <!--Header color start-->
+    <View
+        android:id="@+id/viewHeaderColor"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="#08D990"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--Header color end-->
+
+    <!--Avatar start-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true" />
+    <!--Avatar start-->
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:includeFontPadding="false"
+        android:text="StarBucks"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewStore"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+        app:layout_constraintTop_toTopOf="@id/imageViewAvatar" />
+    <!--Name end-->
+
+    <!--Uid start-->
+    <TextView
+        android:id="@+id/textViewStore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:includeFontPadding="false"
+        android:text="Store"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewAvatar"
+        app:layout_constraintStart_toEndOf="@id/imageViewAvatar"
+        app:layout_constraintTop_toBottomOf="@id/textViewName" />
+    <!--Uid end-->
+
+
+    <ImageView
+        android:id="@+id/imageViewSetting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewAvatar" />
+
+    <ImageView
+        android:id="@+id/imageViewSeal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewSetting"
+        app:layout_constraintEnd_toStartOf="@id/imageViewSetting"
+        app:layout_constraintTop_toTopOf="@id/imageViewSetting" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutItem01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_white_round"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="@id/imageViewSetting"
+        app:layout_constraintStart_toStartOf="@id/imageViewAvatar"
+        app:layout_constraintTop_toBottomOf="@id/imageViewAvatar">
+
+        <!--Banana title start-->
+        <TextView
+            android:id="@+id/textViewCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="活動代碼"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        <!--Banana title end-->
+
+
+        <!--Banana title start-->
+        <TextView
+            android:id="@+id/textViewWorkStore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="合作電商"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+        <!--Banana balance end-->
+
+        <!--Banana title start-->
+        <TextView
+            android:id="@+id/textViewSwipeStore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="滑眾商城"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!--Banana card end-->
+
+    <!--Setting button start-->
+    <!--    <ImageView-->
+    <!--        android:id="@+id/buttonSetting"-->
+    <!--        android:layout_width="44dp"-->
+    <!--        android:layout_height="44dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:background="@drawable/bg_clickable_mask_oval"-->
+    <!--        android:contentDescription="@null"-->
+    <!--        android:padding="8dp"-->
+    <!--        android:src="@drawable/ic_setting"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/spacePaddingTop" />-->
+    <!--Setting button start-->
+
+    <!--Tab layout start-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#f6f9ff"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@id/layoutItem01"
+        app:layout_constraintStart_toStartOf="@id/layoutItem01"
+        app:layout_constraintTop_toBottomOf="@id/layoutItem01"
+        app:tabIndicatorColor="@color/teal_200"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMinWidth="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#303133"
+        app:tabTextColor="#b7b7b7" />
+
+
+    <!--Slide start-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerSlide"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="@id/tabLayout"
+        app:layout_constraintStart_toStartOf="@id/tabLayout"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+    <!--Slide end-->
+
+    <TextView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#E91E63"
+        android:gravity="center"
+        android:text="AD View"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/viewPagerSlide"
+        app:layout_constraintStart_toStartOf="@id/viewPagerSlide"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerSlide" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
